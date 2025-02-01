@@ -13,13 +13,20 @@ struct OrderItem: Codable, Identifiable {
     var quantity: Int
     var unitPrice: Decimal
     var discount: Decimal
-    var notes: String?
 
     var subtotal: Decimal {
         return unitPrice * Decimal(quantity)
     }
 
-    var total: Decimal {
+    var taxAmount: Decimal {
+        return product.taxAmount * Decimal(quantity)
+    }
+
+    var discountedSubtotal: Decimal {
         return subtotal - discount
+    }
+
+    var total: Decimal {
+        return discountedSubtotal + taxAmount
     }
 }
