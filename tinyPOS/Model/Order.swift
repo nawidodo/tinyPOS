@@ -32,7 +32,7 @@ struct Order: Codable, Identifiable {
     }
 
     var discountAmount: Decimal {
-        guard let discount = discount else { return 0 }
+        guard let discount else { return 0 }
         switch discount.type {
         case .percentage:
             return totalIncludingTax * discount.value
@@ -40,7 +40,7 @@ struct Order: Codable, Identifiable {
             return discount.value
         }
     }
-
+    
     enum OrderStatus: String, Codable {
         case pending
         case processing

@@ -13,7 +13,7 @@ struct OrderItem: Codable, Identifiable {
     var quantity: Int
 
     var subtotalExcludingTax: Decimal {
-        return product.priceIncludingTax * Decimal(quantity)
+        return product.priceExcludingTax * Decimal(quantity)
     }
 
     var subtotalIncludingTax: Decimal {
