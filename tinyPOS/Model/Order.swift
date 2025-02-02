@@ -13,26 +13,32 @@ struct Order: Codable, Identifiable {
     var status: OrderStatus
     var customer: Customer?
     var orderDate: Date
-    var paymentMethod: PaymentMethod?
-
-    var subtotal: Decimal {
-        items.reduce(0) { $0 + $1.subtotal }
-    }
+    var discount: Discount?
 
     var taxAmount: Decimal {
         items.reduce(0) { $0 + $1.taxAmount }
     }
 
-    var totalDiscount: Decimal {
-        items.reduce(0) { $0 + $1.discount }
+    var totalExcludingTax: Decimal {
+        items.reduce(0) { $0 + $1.subtotalExcludingTax }
     }
 
-    var discountedSubtotal: Decimal {
-        items.reduce(0) { $0 + $1.discountedSubtotal }
+    var totalIncludingTax: Decimal {
+        items.reduce(0) { $0 + $1.subtotalIncludingTax }
     }
 
     var total: Decimal {
-        items.reduce(0) { $0 + $1.total }
+        totalIncludingTax - discountAmount
+    }
+
+    var discountAmount: Decimal {
+        guard let discount = discount else { return 0 }
+        switch discount.type {
+        case .percentage:
+            return totalIncludingTax * discount.value
+        case .amount:
+            return discount.value
+        }
     }
 
     enum OrderStatus: String, Codable {
@@ -45,12 +51,5 @@ struct Order: Codable, Identifiable {
         var label: String {
             return rawValue.capitalized
         }
-    }
-
-    enum PaymentMethod: String, Codable {
-        case cash
-        case creditCard
-        case debitCard
-        case digitalWallet
     }
 }

@@ -31,6 +31,6 @@ struct OrderDetailView_Previews: PreviewProvider {
     }
 
     static var dummyOrder: Order {
-        Order(id: 0, items: [], status: .completed, customer: Customer(id: 0, name: "Hibiki", balance: 0), orderDate: Date())
+        Order(id: 0, items: [], status: .completed, customer: Customer(id: 0, name: "Hibiki", balance: 0), orderDate: Date(), discount: <#Decimal#>)
     }
 }
