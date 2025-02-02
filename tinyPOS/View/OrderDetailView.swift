@@ -27,9 +27,9 @@ struct OrderDetailView: View {
         if let discount = order.discount, discount.value > 0 {
             switch discount.type {
             case .amount:
-                InfoRow(title: "Discount", value: "-\(discount.value.currency)")
+                InfoRow(title: "Discount", value: "-\(order.discountAmount.currency)")
             case .percentage:
-                InfoRow(title: "Discount", value: "\(discount.value*100)%")
+                InfoRow(title: "Discount", value: "\(discount.value*100)% (-\(order.discountAmount.currency))")
             }
         }
     }
@@ -71,32 +71,6 @@ struct OrderDetailView: View {
 
 struct OrderDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        OrderDetailView(order: OrderDetailView_Previews.dummyOrder)
-    }
-
-    static var dummyOrder: Order {
-
-        let tax = Tax(id: 0, name: "10%", rate: 0.1)
-
-        let products = [
-            Product(id: 1, name: "Espresso", priceIncludingTax: 3.50, tax: tax),
-            Product(id: 2, name: "Cappuccino", priceIncludingTax: 4.50, tax: tax),
-            Product(id: 3, name: "Croissant", priceIncludingTax: 2.75, tax: tax)
-        ]
-        
-        let orderItems = [
-            OrderItem(id: 1, product: products[0], quantity: 2),
-            OrderItem(id: 2, product: products[1], quantity: 1),
-            OrderItem(id: 3, product: products[2], quantity: 3)
-        ]
-        
-        return Order(
-            id: 1001,
-            items: orderItems,
-            status: .completed,
-            customer: Customer(id: 1, name: "Hibiki", balance: 50.00),
-            orderDate: Date(),
-            discount: Discount(id: 0, value: 10, type: .amount)
-        )
+        OrderDetailView(order: Order.sampleOrders[0])
     }
 }

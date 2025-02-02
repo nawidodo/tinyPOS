@@ -1,0 +1,315 @@
+[
+        {
+            "id": 1001,
+            "items": [
+                {
+                    "id": 1,
+                    "product": {
+                        "id": 1,
+                        "name": "Big Brekkie",
+                        "priceIncludingTax": 16.00,
+                        "tax": {
+                            "id": 1,
+                            "name": "GST",
+                            "rate": 0.1
+                        }
+                    },
+                    "quantity": 2
+                },
+                {
+                    "id": 2,
+                    "product": {
+                        "id": 2,
+                        "name": "Bruchetta",
+                        "priceIncludingTax": 8.00,
+                        "tax": {
+                            "id": 1,
+                            "name": "GST",
+                            "rate": 0.1
+                        }
+                    },
+                    "quantity": 1
+                },
+                {
+                    "id": 3,
+                    "product": {
+                        "id": 3,
+                        "name": "Poached Eggs",
+                        "priceIncludingTax": 12.00,
+                        "tax": {
+                            "id": 1,
+                            "name": "GST",
+                            "rate": 0.1
+                        }
+                    },
+                    "quantity": 1
+                },
+                {
+                    "id": 4,
+                    "product": {
+                        "id": 4,
+                        "name": "Coffee",
+                        "priceIncludingTax": 5.00,
+                        "tax": {
+                            "id": 1,
+                            "name": "GST",
+                            "rate": 0.1
+                        }
+                    },
+                    "quantity": 1
+                },
+                {
+                    "id": 5,
+                    "product": {
+                        "id": 5,
+                        "name": "Tea",
+                        "priceIncludingTax": 3.00,
+                        "tax": {
+                            "id": 1,
+                            "name": "GST",
+                            "rate": 0.1
+                        }
+                    },
+                    "quantity": 1
+                },
+                {
+                    "id": 6,
+                    "product": {
+                        "id": 6,
+                        "name": "Soda",
+                        "priceIncludingTax": 4.00,
+                        "tax": {
+                            "id": 1,
+                            "name": "GST",
+                            "rate": 0.1
+                        }
+                    },
+                    "quantity": 1
+                }
+            ],
+            "status": "completed",
+            "customer": {
+                "id": 1,
+                "name": "Group 1",
+                "balance": 0
+            },
+            "orderDate": "2025-02-01T12:00:00Z",
+            "discount": null
+        },
+        {
+            "id": 1002,
+            "items": [
+                {
+                    "id": 1,
+                    "product": {
+                        "id": 5,
+                        "name": "Tea",
+                        "priceIncludingTax": 3.00,
+                        "tax": {
+                            "id": 1,
+                            "name": "GST",
+                            "rate": 0.1
+                        }
+                    },
+                    "quantity": 1
+                },
+                {
+                    "id": 2,
+                    "product": {
+                        "id": 4,
+                        "name": "Coffee",
+                        "priceIncludingTax": 3.00,
+                        "tax": {
+                            "id": 1,
+                            "name": "GST",
+                            "rate": 0.1
+                        }
+                    },
+                    "quantity": 3
+                },
+                {
+                    "id": 3,
+                    "product": {
+                        "id": 6,
+                        "name": "Soda",
+                        "priceIncludingTax": 4.00,
+                        "tax": {
+                            "id": 1,
+                            "name": "GST",
+                            "rate": 0.1
+                        }
+                    },
+                    "quantity": 1
+                },
+                {
+                    "id": 4,
+                    "product": {
+                        "id": 1,
+                        "name": "Big Brekkie",
+                        "priceIncludingTax": 16.00,
+                        "tax": {
+                            "id": 1,
+                            "name": "GST",
+                            "rate": 0.1
+                        }
+                    },
+                    "quantity": 3
+                },
+                {
+                    "id": 5,
+                    "product": {
+                        "id": 3,
+                        "name": "Poached Eggs",
+                        "priceIncludingTax": 12.00,
+                        "tax": {
+                            "id": 1,
+                            "name": "GST",
+                            "rate": 0.1
+                        }
+                    },
+                    "quantity": 1
+                },
+                {
+                    "id": 6,
+                    "product": {
+                        "id": 2,
+                        "name": "Garden Salad",
+                        "priceIncludingTax": 10.00,
+                        "tax": {
+                            "id": 1,
+                            "name": "GST",
+                            "rate": 0.1
+                        }
+                    },
+                    "quantity": 1
+                }
+            ],
+            "status": "completed",
+            "customer": {
+                "id": 2,
+                "name": "Group 2",
+                "balance": 0
+            },
+            "orderDate": "2025-02-01T12:30:00Z",
+            "discount": {
+                "id": 0,
+                "value": 0.1,
+                "type": "percentage"
+            }
+        },
+        {
+            "id": 1003,
+            "items": [
+                {
+                    "id": 1,
+                    "product": {
+                        "id": 5,
+                        "name": "Tea",
+                        "priceIncludingTax": 3.00,
+                        "tax": {
+                            "id": 1,
+                            "name": "GST",
+                            "rate": 0.1
+                        }
+                    },
+                    "quantity": 2
+                },
+                {
+                    "id": 2,
+                    "product": {
+                        "id": 4,
+                        "name": "Coffee",
+                        "priceIncludingTax": 3.00,
+                        "tax": {
+                            "id": 1,
+                            "name": "GST",
+                            "rate": 0.1
+                        }
+                    },
+                    "quantity": 3
+                },
+                {
+                    "id": 3,
+                    "product": {
+                        "id": 6,
+                        "name": "Soda",
+                        "priceIncludingTax": 4.00,
+                        "tax": {
+                            "id": 1,
+                            "name": "GST",
+                            "rate": 0.1
+                        }
+                    },
+                    "quantity": 2
+                },
+                {
+                    "id": 4,
+                    "product": {
+                        "id": 2,
+                        "name": "Bruchetta",
+                        "priceIncludingTax": 8.00,
+                        "tax": {
+                            "id": 1,
+                            "name": "GST",
+                            "rate": 0.1
+                        }
+                    },
+                    "quantity": 5
+                },
+                {
+                    "id": 5,
+                    "product": {
+                        "id": 1,
+                        "name": "Big Brekkie",
+                        "priceIncludingTax": 16.00,
+                        "tax": {
+                            "id": 1,
+                            "name": "GST",
+                            "rate": 0.1
+                        }
+                    },
+                    "quantity": 5
+                },
+                {
+                    "id": 6,
+                    "product": {
+                        "id": 3,
+                        "name": "Poached Eggs",
+                        "priceIncludingTax": 12.00,
+                        "tax": {
+                            "id": 1,
+                            "name": "GST",
+                            "rate": 0.1
+                        }
+                    },
+                    "quantity": 2
+                },
+                {
+                    "id": 7,
+                    "product": {
+                        "id": 2,
+                        "name": "Garden Salad",
+                        "priceIncludingTax": 10.00,
+                        "tax": {
+                            "id": 1,
+                            "name": "GST",
+                            "rate": 0.1
+                        }
+                    },
+                    "quantity": 3
+                }
+            ],
+            "status": "completed",
+            "customer": {
+                "id": 3,
+                "name": "Group 3",
+                "balance": 0
+            },
+            "orderDate": "2025-02-01T13:30:00Z",
+            "discount": {
+                "id": 1,
+                "value": 25,
+                "type": "amount"
+            }
+        }
+]

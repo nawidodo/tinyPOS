@@ -11,7 +11,7 @@ import SwiftUI
 struct tinyPOSApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            OrderListView(orders: Bundle.main.decode([Order].self, from: "Orders.json"))
         }
     }
 }
