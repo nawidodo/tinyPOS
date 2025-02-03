@@ -86,7 +86,7 @@ extension Invoice.InvoiceStatus {
         switch self {
         case .unpaid:
             return .orange
-        case .partiallyPaid:
+        case .partial:
             return .blue
         case .paid:
             return .green

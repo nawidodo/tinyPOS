@@ -7,7 +7,7 @@
         "product": {
           "id": 1,
           "name": "Big Brekkie",
-          "priceIncludingTax": 16.00,
+          "priceIncludingTax": 16,
           "tax": {
             "id": 1,
             "name": "GST",
@@ -21,7 +21,7 @@
         "product": {
           "id": 2,
           "name": "Bruchetta",
-          "priceIncludingTax": 8.00,
+          "priceIncludingTax": 8,
           "tax": {
             "id": 1,
             "name": "GST",
@@ -35,7 +35,7 @@
         "product": {
           "id": 3,
           "name": "Poached Eggs",
-          "priceIncludingTax": 12.00,
+          "priceIncludingTax": 12,
           "tax": {
             "id": 1,
             "name": "GST",
@@ -49,7 +49,7 @@
         "product": {
           "id": 4,
           "name": "Coffee",
-          "priceIncludingTax": 5.00,
+          "priceIncludingTax": 5,
           "tax": {
             "id": 1,
             "name": "GST",
@@ -63,7 +63,7 @@
         "product": {
           "id": 5,
           "name": "Tea",
-          "priceIncludingTax": 3.00,
+          "priceIncludingTax": 3,
           "tax": {
             "id": 1,
             "name": "GST",
@@ -77,7 +77,7 @@
         "product": {
           "id": 6,
           "name": "Soda",
-          "priceIncludingTax": 4.00,
+          "priceIncludingTax": 4,
           "tax": {
             "id": 1,
             "name": "GST",
@@ -106,7 +106,7 @@
             "product": {
               "id": 1,
               "name": "Big Brekkie",
-              "priceIncludingTax": 16.00,
+              "priceIncludingTax": 16,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -120,7 +120,7 @@
             "product": {
               "id": 5,
               "name": "Tea",
-              "priceIncludingTax": 3.00,
+              "priceIncludingTax": 3,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -140,7 +140,8 @@
         "discount": null,
         "paymentMethod": "cash",
         "pax": 1,
-        "splitBill": "individual"
+        "splitBill": "individual",
+        "payments": []
       },
       {
         "id": 1002,
@@ -151,7 +152,7 @@
             "product": {
               "id": 1,
               "name": "Big Brekkie",
-              "priceIncludingTax": 16.00,
+              "priceIncludingTax": 16,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -165,7 +166,7 @@
             "product": {
               "id": 4,
               "name": "Coffee",
-              "priceIncludingTax": 5.00,
+              "priceIncludingTax": 5,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -185,7 +186,8 @@
         "discount": null,
         "paymentMethod": "cash",
         "pax": 1,
-        "splitBill": "individual"
+        "splitBill": "individual",
+        "payments": []
       },
       {
         "id": 1003,
@@ -196,7 +198,7 @@
             "product": {
               "id": 2,
               "name": "Bruchetta",
-              "priceIncludingTax": 8.00,
+              "priceIncludingTax": 8,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -210,7 +212,7 @@
             "product": {
               "id": 3,
               "name": "Poached Eggs",
-              "priceIncludingTax": 12.00,
+              "priceIncludingTax": 12,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -224,7 +226,7 @@
             "product": {
               "id": 6,
               "name": "Soda",
-              "priceIncludingTax": 4.00,
+              "priceIncludingTax": 4,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -244,7 +246,8 @@
         "discount": null,
         "paymentMethod": "cash",
         "pax": 1,
-        "splitBill": "individual"
+        "splitBill": "individual",
+        "payments": []
       }
     ]
   },
@@ -256,7 +259,7 @@
         "product": {
           "id": 5,
           "name": "Tea",
-          "priceIncludingTax": 3.00,
+          "priceIncludingTax": 3,
           "tax": {
             "id": 1,
             "name": "GST",
@@ -270,7 +273,7 @@
         "product": {
           "id": 4,
           "name": "Coffee",
-          "priceIncludingTax": 3.00,
+          "priceIncludingTax": 3,
           "tax": {
             "id": 1,
             "name": "GST",
@@ -284,7 +287,7 @@
         "product": {
           "id": 6,
           "name": "Soda",
-          "priceIncludingTax": 4.00,
+          "priceIncludingTax": 4,
           "tax": {
             "id": 1,
             "name": "GST",
@@ -298,7 +301,7 @@
         "product": {
           "id": 1,
           "name": "Big Brekkie",
-          "priceIncludingTax": 16.00,
+          "priceIncludingTax": 16,
           "tax": {
             "id": 1,
             "name": "GST",
@@ -312,7 +315,7 @@
         "product": {
           "id": 3,
           "name": "Poached Eggs",
-          "priceIncludingTax": 12.00,
+          "priceIncludingTax": 12,
           "tax": {
             "id": 1,
             "name": "GST",
@@ -326,7 +329,7 @@
         "product": {
           "id": 2,
           "name": "Garden Salad",
-          "priceIncludingTax": 10.00,
+          "priceIncludingTax": 10,
           "tax": {
             "id": 1,
             "name": "GST",
@@ -359,7 +362,7 @@
             "product": {
               "id": 5,
               "name": "Tea",
-              "priceIncludingTax": 3.00,
+              "priceIncludingTax": 3,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -373,7 +376,7 @@
             "product": {
               "id": 4,
               "name": "Coffee",
-              "priceIncludingTax": 3.00,
+              "priceIncludingTax": 3,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -387,7 +390,7 @@
             "product": {
               "id": 6,
               "name": "Soda",
-              "priceIncludingTax": 4.00,
+              "priceIncludingTax": 4,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -401,7 +404,7 @@
             "product": {
               "id": 1,
               "name": "Big Brekkie",
-              "priceIncludingTax": 16.00,
+              "priceIncludingTax": 16,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -415,7 +418,7 @@
             "product": {
               "id": 3,
               "name": "Poached Eggs",
-              "priceIncludingTax": 12.00,
+              "priceIncludingTax": 12,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -429,7 +432,7 @@
             "product": {
               "id": 2,
               "name": "Garden Salad",
-              "priceIncludingTax": 10.00,
+              "priceIncludingTax": 10,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -449,7 +452,8 @@
         "discount": null,
         "paymentMethod": "credit",
         "pax": 1,
-        "splitBill": "none"
+        "splitBill": "none",
+        "payments": []
       }
     ]
   },
@@ -461,7 +465,7 @@
         "product": {
           "id": 5,
           "name": "Tea",
-          "priceIncludingTax": 3.00,
+          "priceIncludingTax": 3,
           "tax": {
             "id": 1,
             "name": "GST",
@@ -475,7 +479,7 @@
         "product": {
           "id": 4,
           "name": "Coffee",
-          "priceIncludingTax": 3.00,
+          "priceIncludingTax": 3,
           "tax": {
             "id": 1,
             "name": "GST",
@@ -489,7 +493,7 @@
         "product": {
           "id": 6,
           "name": "Soda",
-          "priceIncludingTax": 4.00,
+          "priceIncludingTax": 4,
           "tax": {
             "id": 1,
             "name": "GST",
@@ -503,7 +507,7 @@
         "product": {
           "id": 2,
           "name": "Bruchetta",
-          "priceIncludingTax": 8.00,
+          "priceIncludingTax": 8,
           "tax": {
             "id": 1,
             "name": "GST",
@@ -517,7 +521,7 @@
         "product": {
           "id": 1,
           "name": "Big Brekkie",
-          "priceIncludingTax": 16.00,
+          "priceIncludingTax": 16,
           "tax": {
             "id": 1,
             "name": "GST",
@@ -531,7 +535,7 @@
         "product": {
           "id": 3,
           "name": "Poached Eggs",
-          "priceIncludingTax": 12.00,
+          "priceIncludingTax": 12,
           "tax": {
             "id": 1,
             "name": "GST",
@@ -545,7 +549,7 @@
         "product": {
           "id": 2,
           "name": "Garden Salad",
-          "priceIncludingTax": 10.00,
+          "priceIncludingTax": 10,
           "tax": {
             "id": 1,
             "name": "GST",
@@ -578,7 +582,7 @@
             "product": {
               "id": 5,
               "name": "Tea",
-              "priceIncludingTax": 3.00,
+              "priceIncludingTax": 3,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -592,7 +596,7 @@
             "product": {
               "id": 4,
               "name": "Coffee",
-              "priceIncludingTax": 3.00,
+              "priceIncludingTax": 3,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -606,7 +610,7 @@
             "product": {
               "id": 6,
               "name": "Soda",
-              "priceIncludingTax": 4.00,
+              "priceIncludingTax": 4,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -620,7 +624,7 @@
             "product": {
               "id": 2,
               "name": "Bruchetta",
-              "priceIncludingTax": 8.00,
+              "priceIncludingTax": 8,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -634,7 +638,7 @@
             "product": {
               "id": 1,
               "name": "Big Brekkie",
-              "priceIncludingTax": 16.00,
+              "priceIncludingTax": 16,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -648,7 +652,7 @@
             "product": {
               "id": 3,
               "name": "Poached Eggs",
-              "priceIncludingTax": 12.00,
+              "priceIncludingTax": 12,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -662,7 +666,7 @@
             "product": {
               "id": 7,
               "name": "Garden Salad",
-              "priceIncludingTax": 10.00,
+              "priceIncludingTax": 10,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -676,17 +680,24 @@
         "customer": {
           "id": 3,
           "name": "Group 3",
-          "balance": 50.00
+          "balance": 50
         },
         "invoiceDate": "2025-02-01T13:00:00Z",
         "discount": {
           "id": 1,
           "type": "amount",
-          "value": 25.00
+          "value": 25
         },
         "paymentMethod": "cash",
         "pax": 7,
-        "splitBill": "equal"
+        "splitBill": "equal",
+        "payments": [
+          {
+            "id": 0,
+            "paymentMethod": "cash",
+            "amount": 31.71
+          }
+        ]
       },
       {
         "id": 3002,
@@ -697,7 +708,7 @@
             "product": {
               "id": 5,
               "name": "Tea",
-              "priceIncludingTax": 3.00,
+              "priceIncludingTax": 3,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -711,7 +722,7 @@
             "product": {
               "id": 4,
               "name": "Coffee",
-              "priceIncludingTax": 3.00,
+              "priceIncludingTax": 3,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -725,7 +736,7 @@
             "product": {
               "id": 6,
               "name": "Soda",
-              "priceIncludingTax": 4.00,
+              "priceIncludingTax": 4,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -739,7 +750,7 @@
             "product": {
               "id": 2,
               "name": "Bruchetta",
-              "priceIncludingTax": 8.00,
+              "priceIncludingTax": 8,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -753,7 +764,7 @@
             "product": {
               "id": 1,
               "name": "Big Brekkie",
-              "priceIncludingTax": 16.00,
+              "priceIncludingTax": 16,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -767,7 +778,7 @@
             "product": {
               "id": 3,
               "name": "Poached Eggs",
-              "priceIncludingTax": 12.00,
+              "priceIncludingTax": 12,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -781,7 +792,7 @@
             "product": {
               "id": 7,
               "name": "Garden Salad",
-              "priceIncludingTax": 10.00,
+              "priceIncludingTax": 10,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -791,21 +802,28 @@
             "quantity": 3
           }
         ],
-        "status": "paid",
+        "status": "partial",
         "customer": {
           "id": 3,
           "name": "Group 3",
-          "balance": 50.00
+          "balance": 50
         },
         "invoiceDate": "2025-02-01T13:00:00Z",
         "discount": {
           "id": 1,
           "type": "amount",
-          "value": 25.00
+          "value": 25
         },
         "paymentMethod": "cash",
         "pax": 7,
-        "splitBill": "equal"
+        "splitBill": "equal",
+        "payments": [
+            {
+              "id": 1,
+              "paymentMethod": "cash",
+              "amount": 20
+            }
+        ]
       },
       {
         "id": 3003,
@@ -816,7 +834,7 @@
             "product": {
               "id": 5,
               "name": "Tea",
-              "priceIncludingTax": 3.00,
+              "priceIncludingTax": 3,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -830,7 +848,7 @@
             "product": {
               "id": 4,
               "name": "Coffee",
-              "priceIncludingTax": 3.00,
+              "priceIncludingTax": 3,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -844,7 +862,7 @@
             "product": {
               "id": 6,
               "name": "Soda",
-              "priceIncludingTax": 4.00,
+              "priceIncludingTax": 4,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -858,7 +876,7 @@
             "product": {
               "id": 2,
               "name": "Bruchetta",
-              "priceIncludingTax": 8.00,
+              "priceIncludingTax": 8,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -872,7 +890,7 @@
             "product": {
               "id": 1,
               "name": "Big Brekkie",
-              "priceIncludingTax": 16.00,
+              "priceIncludingTax": 16,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -886,7 +904,7 @@
             "product": {
               "id": 3,
               "name": "Poached Eggs",
-              "priceIncludingTax": 12.00,
+              "priceIncludingTax": 12,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -900,7 +918,7 @@
             "product": {
               "id": 7,
               "name": "Garden Salad",
-              "priceIncludingTax": 10.00,
+              "priceIncludingTax": 10,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -910,21 +928,22 @@
             "quantity": 3
           }
         ],
-        "status": "paid",
+        "status": "unpaid",
         "customer": {
           "id": 3,
           "name": "Group 3",
-          "balance": 50.00
+          "balance": 50
         },
         "invoiceDate": "2025-02-01T13:00:00Z",
         "discount": {
           "id": 1,
           "type": "amount",
-          "value": 25.00
+          "value": 25
         },
         "paymentMethod": "cash",
         "pax": 7,
-        "splitBill": "equal"
+        "splitBill": "equal",
+        "payments": []
       },
       {
         "id": 3004,
@@ -935,7 +954,7 @@
             "product": {
               "id": 5,
               "name": "Tea",
-              "priceIncludingTax": 3.00,
+              "priceIncludingTax": 3,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -949,7 +968,7 @@
             "product": {
               "id": 4,
               "name": "Coffee",
-              "priceIncludingTax": 3.00,
+              "priceIncludingTax": 3,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -963,7 +982,7 @@
             "product": {
               "id": 6,
               "name": "Soda",
-              "priceIncludingTax": 4.00,
+              "priceIncludingTax": 4,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -977,7 +996,7 @@
             "product": {
               "id": 2,
               "name": "Bruchetta",
-              "priceIncludingTax": 8.00,
+              "priceIncludingTax": 8,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -991,7 +1010,7 @@
             "product": {
               "id": 1,
               "name": "Big Brekkie",
-              "priceIncludingTax": 16.00,
+              "priceIncludingTax": 16,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -1005,7 +1024,7 @@
             "product": {
               "id": 3,
               "name": "Poached Eggs",
-              "priceIncludingTax": 12.00,
+              "priceIncludingTax": 12,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -1019,7 +1038,7 @@
             "product": {
               "id": 7,
               "name": "Garden Salad",
-              "priceIncludingTax": 10.00,
+              "priceIncludingTax": 10,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -1029,21 +1048,22 @@
             "quantity": 3
           }
         ],
-        "status": "paid",
+        "status": "unpaid",
         "customer": {
           "id": 3,
           "name": "Group 3",
-          "balance": 50.00
+          "balance": 50
         },
         "invoiceDate": "2025-02-01T13:00:00Z",
         "discount": {
           "id": 1,
           "type": "amount",
-          "value": 25.00
+          "value": 25
         },
         "paymentMethod": "cash",
         "pax": 7,
-        "splitBill": "equal"
+        "splitBill": "equal",
+        "payments": []
       },
       {
         "id": 3005,
@@ -1054,7 +1074,7 @@
             "product": {
               "id": 5,
               "name": "Tea",
-              "priceIncludingTax": 3.00,
+              "priceIncludingTax": 3,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -1068,7 +1088,7 @@
             "product": {
               "id": 4,
               "name": "Coffee",
-              "priceIncludingTax": 3.00,
+              "priceIncludingTax": 3,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -1082,7 +1102,7 @@
             "product": {
               "id": 6,
               "name": "Soda",
-              "priceIncludingTax": 4.00,
+              "priceIncludingTax": 4,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -1096,7 +1116,7 @@
             "product": {
               "id": 2,
               "name": "Bruchetta",
-              "priceIncludingTax": 8.00,
+              "priceIncludingTax": 8,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -1110,7 +1130,7 @@
             "product": {
               "id": 1,
               "name": "Big Brekkie",
-              "priceIncludingTax": 16.00,
+              "priceIncludingTax": 16,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -1124,7 +1144,7 @@
             "product": {
               "id": 3,
               "name": "Poached Eggs",
-              "priceIncludingTax": 12.00,
+              "priceIncludingTax": 12,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -1138,7 +1158,7 @@
             "product": {
               "id": 7,
               "name": "Garden Salad",
-              "priceIncludingTax": 10.00,
+              "priceIncludingTax": 10,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -1148,21 +1168,22 @@
             "quantity": 3
           }
         ],
-        "status": "paid",
+        "status": "unpaid",
         "customer": {
           "id": 3,
           "name": "Group 3",
-          "balance": 50.00
+          "balance": 50
         },
         "invoiceDate": "2025-02-01T13:00:00Z",
         "discount": {
           "id": 1,
           "type": "amount",
-          "value": 25.00
+          "value": 25
         },
         "paymentMethod": "cash",
         "pax": 7,
-        "splitBill": "equal"
+        "splitBill": "equal",
+        "payments": []
       },
       {
         "id": 3006,
@@ -1173,7 +1194,7 @@
             "product": {
               "id": 5,
               "name": "Tea",
-              "priceIncludingTax": 3.00,
+              "priceIncludingTax": 3,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -1187,7 +1208,7 @@
             "product": {
               "id": 4,
               "name": "Coffee",
-              "priceIncludingTax": 3.00,
+              "priceIncludingTax": 3,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -1201,7 +1222,7 @@
             "product": {
               "id": 6,
               "name": "Soda",
-              "priceIncludingTax": 4.00,
+              "priceIncludingTax": 4,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -1215,7 +1236,7 @@
             "product": {
               "id": 2,
               "name": "Bruchetta",
-              "priceIncludingTax": 8.00,
+              "priceIncludingTax": 8,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -1229,7 +1250,7 @@
             "product": {
               "id": 1,
               "name": "Big Brekkie",
-              "priceIncludingTax": 16.00,
+              "priceIncludingTax": 16,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -1243,7 +1264,7 @@
             "product": {
               "id": 3,
               "name": "Poached Eggs",
-              "priceIncludingTax": 12.00,
+              "priceIncludingTax": 12,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -1257,7 +1278,7 @@
             "product": {
               "id": 7,
               "name": "Garden Salad",
-              "priceIncludingTax": 10.00,
+              "priceIncludingTax": 10,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -1267,21 +1288,22 @@
             "quantity": 3
           }
         ],
-        "status": "paid",
+        "status": "unpaid",
         "customer": {
           "id": 3,
           "name": "Group 3",
-          "balance": 50.00
+          "balance": 50
         },
         "invoiceDate": "2025-02-01T13:00:00Z",
         "discount": {
           "id": 1,
           "type": "amount",
-          "value": 25.00
+          "value": 25
         },
         "paymentMethod": "cash",
         "pax": 7,
-        "splitBill": "equal"
+        "splitBill": "equal",
+        "payments": []
       },
       {
         "id": 3007,
@@ -1292,7 +1314,7 @@
             "product": {
               "id": 5,
               "name": "Tea",
-              "priceIncludingTax": 3.00,
+              "priceIncludingTax": 3,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -1306,7 +1328,7 @@
             "product": {
               "id": 4,
               "name": "Coffee",
-              "priceIncludingTax": 3.00,
+              "priceIncludingTax": 3,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -1320,7 +1342,7 @@
             "product": {
               "id": 6,
               "name": "Soda",
-              "priceIncludingTax": 4.00,
+              "priceIncludingTax": 4,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -1334,7 +1356,7 @@
             "product": {
               "id": 2,
               "name": "Bruchetta",
-              "priceIncludingTax": 8.00,
+              "priceIncludingTax": 8,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -1348,7 +1370,7 @@
             "product": {
               "id": 1,
               "name": "Big Brekkie",
-              "priceIncludingTax": 16.00,
+              "priceIncludingTax": 16,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -1362,7 +1384,7 @@
             "product": {
               "id": 3,
               "name": "Poached Eggs",
-              "priceIncludingTax": 12.00,
+              "priceIncludingTax": 12,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -1376,7 +1398,7 @@
             "product": {
               "id": 7,
               "name": "Garden Salad",
-              "priceIncludingTax": 10.00,
+              "priceIncludingTax": 10,
               "tax": {
                 "id": 1,
                 "name": "GST",
@@ -1386,21 +1408,22 @@
             "quantity": 3
           }
         ],
-        "status": "paid",
+        "status": "unpaid",
         "customer": {
           "id": 3,
           "name": "Group 3",
-          "balance": 50.00
+          "balance": 50
         },
         "invoiceDate": "2025-02-01T13:00:00Z",
         "discount": {
           "id": 1,
           "type": "amount",
-          "value": 25.00
+          "value": 25
         },
         "paymentMethod": "cash",
         "pax": 7,
-        "splitBill": "equal"
+        "splitBill": "equal",
+        "payments": []
       }
     ]
   }

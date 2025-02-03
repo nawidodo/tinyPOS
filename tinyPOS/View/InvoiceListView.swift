@@ -18,7 +18,7 @@ struct InvoiceListView: View {
                 Text(verbatim: "Invoice #\(invoice.id)")
                     .font(.headline)
                 Spacer()
-                Text(subTotal(invoice).currency)
+                Text(invoice.total.currency)
                     .fontWeight(.semibold)
             }
 
@@ -57,14 +57,6 @@ struct InvoiceListView: View {
                     Image(systemName: "plus")
                 }
             }
-        }
-    }
-
-    private func subTotal(_ invoice: Invoice) -> Decimal {
-        if invoice.splitBill == .equal {
-            return invoice.total / Decimal(invoice.pax)
-        } else {
-            return invoice.total
         }
     }
 }

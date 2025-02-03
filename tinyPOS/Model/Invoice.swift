@@ -18,6 +18,7 @@ struct Invoice: Codable, Identifiable {
     var paymentMethod: PaymentMethod
     var pax = 1
     var splitBill: SplitBill = .none
+    var payments: [Payment] = []
 
     var taxAmount: Decimal {
         items.reduce(0) { $0 + $1.taxAmount }
@@ -35,18 +36,18 @@ struct Invoice: Codable, Identifiable {
         totalIncludingTax - discountAmount
     }
 
-    var total: Decimal {
+    var totalBeforeSplit: Decimal {
         totalAfterDiscount + surcharge + unpaidCustomerBalance
     }
 
-    var totalAfterSplit: Decimal {
+    var total: Decimal {
         switch splitBill {
         case .individual:
-            return total
+            return totalBeforeSplit
         case .equal:
-            return total / Decimal(pax)
+            return totalBeforeSplit / Decimal(pax)
         case .none:
-            return total
+            return totalBeforeSplit
         }
     }
 
@@ -69,9 +70,21 @@ struct Invoice: Codable, Identifiable {
         return customer.balance
     }
 
+    var paid: Decimal {
+        payments.reduce(0) { $0 + $1.amount }
+    }
+
+    var returned: Decimal {
+        0
+    }
+
+    var remaining: Decimal {
+        total - paid - returned
+    }
+
      enum InvoiceStatus: String, Codable {
          case unpaid
-         case partiallyPaid
+         case partial
          case paid
          case cancelled
          case refunded

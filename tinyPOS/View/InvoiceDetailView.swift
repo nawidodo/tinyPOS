@@ -24,6 +24,9 @@ struct InvoiceDetailView: View {
             if let customer = invoice.customer {
                 InfoRow(title: "Customer", value: customer.name)
             }
+            InfoRow(title: "Paid", value: invoice.paid.currency)
+            InfoRow(title: "Returned", value: invoice.returned.currency)
+            InfoRow(title: "Remaining", value: invoice.remaining.currency)
         }
     }
 
@@ -55,10 +58,12 @@ struct InvoiceDetailView: View {
             discount
             surcharge
             receivable
-            InfoRow(title: "Total", value: invoice.total.currency)
             if invoice.splitBill == .equal {
+                InfoRow(title: "Total", value: invoice.totalBeforeSplit.currency)
                 InfoRow(title: "Split Count", value: invoice.pax.formatted(.number))
-                InfoRow(title: "Grand Total After Split", value: invoice.totalAfterSplit.currency)
+                InfoRow(title: "Grand Total After Split", value: invoice.total.currency)
+            } else {
+                InfoRow(title: "Total", value: invoice.total.currency)
             }
         }
     }
