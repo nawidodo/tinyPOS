@@ -10,16 +10,12 @@ import SwiftUI
 extension Order.OrderStatus {
     var color: Color {
         switch self {
-        case .pending:
-            return .orange
         case .processing:
             return .blue
         case .completed:
             return .green
         case .cancelled:
             return .red
-        case .refunded:
-            return .purple
         }
     }
 }
@@ -72,7 +68,8 @@ extension Order {
                         status: .completed,
                         customer: Customer(id: 1, name: "Group 1", balance: 0),
                         orderDate: Date(),
-                        discount: nil),
+                        discount: nil,
+                        invoices: Invoice.sampleInvoices),
             Order(
                         id: 1002,
                         items: orderItems2,

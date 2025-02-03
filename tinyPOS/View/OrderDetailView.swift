@@ -58,9 +58,28 @@ struct OrderDetailView: View {
         }
     }
 
+    @ViewBuilder
+    var invoices: some View {
+        if !order.invoices.isEmpty {
+            Section {
+                 NavigationLink {
+                     InvoiceListView(invoices: order.invoices)
+                 } label: {
+                     HStack {
+                         Text("Linked Invoices")
+                         Spacer()
+                         Text("\(order.invoices.count)")
+                             .foregroundColor(.secondary)
+                     }
+                 }
+             }
+        }
+    }
+
     var body: some View {
         List {
             header
+            invoices
             items
             total
         }

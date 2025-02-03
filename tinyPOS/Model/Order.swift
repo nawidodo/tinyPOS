@@ -14,6 +14,8 @@ struct Order: Codable, Identifiable {
     var customer: Customer?
     var orderDate: Date
     var discount: Discount?
+    var invoices: [Invoice] = []
+    var pax = 1
 
     var taxAmount: Decimal {
         items.reduce(0) { $0 + $1.taxAmount }
@@ -42,11 +44,9 @@ struct Order: Codable, Identifiable {
     }
     
     enum OrderStatus: String, Codable {
-        case pending
         case processing
         case completed
         case cancelled
-        case refunded
 
         var label: String {
             return rawValue.capitalized
