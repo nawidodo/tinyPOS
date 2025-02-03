@@ -18,4 +18,8 @@ enum PaymentMethod: String, Codable {
             return 0.001
         }
     }
+
+    var label: String {
+        self.rawValue.capitalized
+    }
 }

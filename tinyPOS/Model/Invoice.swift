@@ -65,7 +65,7 @@ struct Invoice: Codable, Identifiable {
     }
     
      enum InvoiceStatus: String, Codable {
-         case pending
+         case unpaid
          case partiallyPaid
          case paid
          case cancelled

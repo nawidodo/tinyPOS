@@ -15,10 +15,10 @@ struct InvoiceListView: View {
     private func invoiceRow(_ invoice: Invoice) -> some View {
         VStack(alignment: .leading, spacing: 4) {
             HStack {
-                Text(verbatim: "Order #\(invoice.id)")
+                Text(verbatim: "Invoice #\(invoice.id)")
                     .font(.headline)
                 Spacer()
-                Text(invoice.total.currency)
+                Text(subTotal(invoice).currency)
                     .fontWeight(.semibold)
             }
 
@@ -57,6 +57,14 @@ struct InvoiceListView: View {
                     Image(systemName: "plus")
                 }
             }
+        }
+    }
+
+    private func subTotal(_ invoice: Invoice) -> Decimal {
+        if invoice.splitBill == .equal {
+            return invoice.total / Decimal(invoice.pax)
+        } else {
+            return invoice.total
         }
     }
 }

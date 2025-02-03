@@ -45,7 +45,7 @@ extension Invoice {
                 id: 1001,
                 orderID: orderID,
                 items: items1,
-                status: .pending,
+                status: .unpaid,
                 customer: Customer(id: 1, name: "Person #1", balance: 0),
                 invoiceDate: Date(),
                 discount: nil,
@@ -57,7 +57,7 @@ extension Invoice {
                 id: 1002,
                 orderID: orderID,
                 items: items2,
-                status: .pending,
+                status: .unpaid,
                 customer: Customer(id: 2, name: "Person #2", balance: 0),
                 invoiceDate: Date(),
                 discount: nil,
@@ -69,7 +69,7 @@ extension Invoice {
                 id: 1003,
                 orderID: orderID,
                 items: items3,
-                status: .pending,
+                status: .unpaid,
                 customer: Customer(id: 3, name: "Person #3", balance: 0),
                 invoiceDate: Date(),
                 discount: nil,
@@ -84,7 +84,7 @@ extension Invoice {
 extension Invoice.InvoiceStatus {
     var color: Color {
         switch self {
-        case .pending:
+        case .unpaid:
             return .orange
         case .partiallyPaid:
             return .blue

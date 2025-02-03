@@ -16,6 +16,7 @@ struct InvoiceDetailView: View {
             InfoRow(title: "Invoice Number", value: "\(invoice.id)")
             InfoRow(title: "Order Number", value: "\(invoice.orderID)")
             InfoRow(title: "Date", value: invoice.invoiceDate.formatted())
+            InfoRow(title: "Payment Method", value: invoice.paymentMethod.label)
             if invoice.splitBill != .none {
                 InfoRow(title: "Split Bill", value: invoice.splitBill.label)
             }
@@ -39,15 +40,26 @@ struct InvoiceDetailView: View {
     }
 
     @ViewBuilder
+    var surcharge: some View {
+        if invoice.surcharge > 0 {
+            InfoRow(title: "Surcharge", value: "\(invoice.paymentMethod.surchargeRate*100)% (\(invoice.surcharge.currency))")
+        }
+    }
+
+    @ViewBuilder
     var total: some View {
         Section(header: Text("Summary")) {
             InfoRow(title: "Item Total", value: invoice.totalExcludingTax.currency)
             InfoRow(title: "Tax", value: invoice.taxAmount.currency)
             InfoRow(title: "Subtotal", value: invoice.totalIncludingTax.currency)
             discount
+            surcharge
             InfoRow(title: "Total", value: invoice.total.currency)
+            if invoice.splitBill == .equal {
+                InfoRow(title: "Split Count", value: invoice.pax.formatted(.number))
+                InfoRow(title: "Grand Total After Split", value: invoice.totalAfterSplit.currency)
+            }
         }
-
     }
 
     @ViewBuilder
