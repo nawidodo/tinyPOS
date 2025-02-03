@@ -35,16 +35,6 @@
 			path = tinyPOS;
 			sourceTree = "<group>";
 		};
-		BA82B7DD2D4E339C00AA4553 /* tinyPOSTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = tinyPOSTests;
-			sourceTree = "<group>";
-		};
-		BA82B7E72D4E339C00AA4553 /* tinyPOSUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = tinyPOSUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +66,6 @@
 			isa = PBXGroup;
 			children = (
 				BA82B7CC2D4E339A00AA4553 /* tinyPOS */,
-				BA82B7DD2D4E339C00AA4553 /* tinyPOSTests */,
-				BA82B7E72D4E339C00AA4553 /* tinyPOSUITests */,
 				BA82B7CB2D4E339A00AA4553 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -130,9 +118,6 @@
 			dependencies = (
 				BA82B7DC2D4E339C00AA4553 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				BA82B7DD2D4E339C00AA4553 /* tinyPOSTests */,
-			);
 			name = tinyPOSTests;
 			packageProductDependencies = (
 			);
@@ -152,9 +137,6 @@
 			);
 			dependencies = (
 				BA82B7E62D4E339C00AA4553 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				BA82B7E72D4E339C00AA4553 /* tinyPOSUITests */,
 			);
 			name = tinyPOSUITests;
 			packageProductDependencies = (
