@@ -54,11 +54,19 @@ struct InvoiceDetailView: View {
             InfoRow(title: "Subtotal", value: invoice.totalIncludingTax.currency)
             discount
             surcharge
+            receivable
             InfoRow(title: "Total", value: invoice.total.currency)
             if invoice.splitBill == .equal {
                 InfoRow(title: "Split Count", value: invoice.pax.formatted(.number))
                 InfoRow(title: "Grand Total After Split", value: invoice.totalAfterSplit.currency)
             }
+        }
+    }
+
+    @ViewBuilder
+    var receivable: some View {
+        if let balance = invoice.customer?.balance, balance > 0 {
+            InfoRow(title: "Customer Unpaid Balance", value: balance.currency)
         }
     }
 

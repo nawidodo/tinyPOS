@@ -36,7 +36,7 @@ struct Invoice: Codable, Identifiable {
     }
 
     var total: Decimal {
-        totalAfterDiscount + surcharge
+        totalAfterDiscount + surcharge + unpaidCustomerBalance
     }
 
     var totalAfterSplit: Decimal {
@@ -63,7 +63,12 @@ struct Invoice: Codable, Identifiable {
     var surcharge: Decimal {
         return paymentMethod.surchargeRate * totalAfterDiscount
     }
-    
+
+    var unpaidCustomerBalance: Decimal {
+        guard let customer else { return 0 }
+        return customer.balance
+    }
+
      enum InvoiceStatus: String, Codable {
          case unpaid
          case partiallyPaid
