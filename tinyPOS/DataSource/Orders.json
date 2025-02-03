@@ -133,7 +133,7 @@
         "status": "unpaid",
         "customer": {
           "id": 1,
-          "name": "Person #1",
+          "name": "Group 1",
           "balance": 0
         },
         "invoiceDate": "2025-02-01T12:05:00Z",
@@ -178,7 +178,7 @@
         "status": "unpaid",
         "customer": {
           "id": 2,
-          "name": "Person #2",
+          "name": "Group 1",
           "balance": 0
         },
         "invoiceDate": "2025-02-01T12:05:00Z",
@@ -237,7 +237,7 @@
         "status": "unpaid",
         "customer": {
           "id": 3,
-          "name": "Person #3",
+          "name": "Group 1",
           "balance": 0
         },
         "invoiceDate": "2025-02-01T12:05:00Z",
