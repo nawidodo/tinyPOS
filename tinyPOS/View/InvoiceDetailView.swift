@@ -44,8 +44,8 @@ struct InvoiceDetailView: View {
 
     @ViewBuilder
     var surcharge: some View {
-        if invoice.surcharge > 0 {
-            InfoRow(title: "Surcharge", value: "\(invoice.paymentMethod.surchargeRate*100)% (\(invoice.surcharge.currency))")
+        if let surcharge = invoice.surcharge?.rate, surcharge > 0 {
+            InfoRow(title: "Surcharge", value: "\(surcharge*100)% (\(invoice.surchargeAmount.currency))")
         }
     }
 

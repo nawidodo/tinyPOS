@@ -450,6 +450,11 @@
         },
         "invoiceDate": "2025-02-01T12:30:00Z",
         "discount": null,
+        "surcharge": {
+          "id": 0,
+          "paymentMethod": "credit",
+          "rate": 0.012
+        },
         "paymentMethod": "credit",
         "pax": 1,
         "splitBill": "none",
@@ -688,13 +693,13 @@
           "type": "amount",
           "value": 25
         },
-        "paymentMethod": "cash",
+        "paymentMethod": "debit",
         "pax": 7,
         "splitBill": "equal",
         "payments": [
           {
             "id": 0,
-            "paymentMethod": "cash",
+            "paymentMethod": "debit",
             "amount": 31.71
           }
         ]
@@ -802,7 +807,7 @@
             "quantity": 3
           }
         ],
-        "status": "partial",
+        "status": "paid",
         "customer": {
           "id": 3,
           "name": "Group 3",
@@ -814,15 +819,15 @@
           "type": "amount",
           "value": 25
         },
-        "paymentMethod": "cash",
+        "paymentMethod": "debit",
         "pax": 7,
         "splitBill": "equal",
         "payments": [
-            {
-              "id": 1,
-              "paymentMethod": "cash",
-              "amount": 20
-            }
+          {
+            "id": 0,
+            "paymentMethod": "debit",
+            "amount": 31.71
+          }
         ]
       },
       {
@@ -928,7 +933,7 @@
             "quantity": 3
           }
         ],
-        "status": "unpaid",
+        "status": "paid",
         "customer": {
           "id": 3,
           "name": "Group 3",
@@ -940,10 +945,16 @@
           "type": "amount",
           "value": 25
         },
-        "paymentMethod": "cash",
+        "paymentMethod": "debit",
         "pax": 7,
         "splitBill": "equal",
-        "payments": []
+        "payments": [
+          {
+            "id": 0,
+            "paymentMethod": "debit",
+            "amount": 31.71
+          }
+        ]
       },
       {
         "id": 3004,
@@ -1048,7 +1059,7 @@
             "quantity": 3
           }
         ],
-        "status": "unpaid",
+        "status": "paid",
         "customer": {
           "id": 3,
           "name": "Group 3",
@@ -1063,7 +1074,13 @@
         "paymentMethod": "cash",
         "pax": 7,
         "splitBill": "equal",
-        "payments": []
+        "payments": [
+          {
+            "id": 0,
+            "paymentMethod": "debit",
+            "amount": 31.71
+          }
+        ]
       },
       {
         "id": 3005,
@@ -1168,7 +1185,7 @@
             "quantity": 3
           }
         ],
-        "status": "unpaid",
+        "status": "paid",
         "customer": {
           "id": 3,
           "name": "Group 3",
@@ -1183,7 +1200,13 @@
         "paymentMethod": "cash",
         "pax": 7,
         "splitBill": "equal",
-        "payments": []
+        "payments": [
+          {
+            "id": 0,
+            "paymentMethod": "debit",
+            "amount": 31.71
+          }
+        ]
       },
       {
         "id": 3006,
@@ -1288,7 +1311,7 @@
             "quantity": 3
           }
         ],
-        "status": "unpaid",
+        "status": "paid",
         "customer": {
           "id": 3,
           "name": "Group 3",
@@ -1303,7 +1326,13 @@
         "paymentMethod": "cash",
         "pax": 7,
         "splitBill": "equal",
-        "payments": []
+        "payments": [
+          {
+            "id": 0,
+            "paymentMethod": "debit",
+            "amount": 31.71
+          }
+        ]
       },
       {
         "id": 3007,
@@ -1408,7 +1437,7 @@
             "quantity": 3
           }
         ],
-        "status": "unpaid",
+        "status": "paid",
         "customer": {
           "id": 3,
           "name": "Group 3",
@@ -1423,7 +1452,13 @@
         "paymentMethod": "cash",
         "pax": 7,
         "splitBill": "equal",
-        "payments": []
+        "payments": [
+          {
+            "id": 0,
+            "paymentMethod": "debit",
+            "amount": 31.71
+          }
+        ]
       }
     ]
   }

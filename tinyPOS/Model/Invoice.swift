@@ -15,6 +15,7 @@ struct Invoice: Codable, Identifiable {
     var customer: Customer?
     var invoiceDate: Date
     var discount: Discount?
+    var surcharge: Surcharge?
     var paymentMethod: PaymentMethod
     var pax = 1
     var splitBill: SplitBill = .none
@@ -37,7 +38,7 @@ struct Invoice: Codable, Identifiable {
     }
 
     var totalBeforeSplit: Decimal {
-        totalAfterDiscount + surcharge + unpaidCustomerBalance
+        totalAfterDiscount + surchargeAmount + unpaidCustomerBalance
     }
 
     var total: Decimal {
@@ -61,8 +62,9 @@ struct Invoice: Codable, Identifiable {
         }
     }
 
-    var surcharge: Decimal {
-        return paymentMethod.surchargeRate * totalAfterDiscount
+    var surchargeAmount: Decimal {
+        guard let surcharge else { return 0 }
+        return surcharge.rate * totalAfterDiscount
     }
 
     var unpaidCustomerBalance: Decimal {
